@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    .parent{
+        width: 500px;
+        border: 1px solid black;
+        padding: 10px;
+        position: relative;
+        background-color: antiquewhite;
+        
+    }
+    .btn{
+        position: absolute;
+        top: 10px;
+        right : 10px;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="parent" id="parent">
+    <h1>Welcome Buddy!!</h1>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    Suscipit id cupiditate ipsa dignissimos modi debitis voluptas officiis doloremque corrupti ipsam ad quis 
+    reprehenderit, minus facilis eaque nulla quam hic ducimus?</p>
+    <button>Read More</button>
+    <button onclick="closebox()" class="btn" id="btn"> X</button>
+    </div>
+
+<script>
+    function closebox(){
+ let parent = document.getElementById("parent");
+ parent.style.display = "none";
+    }
+</script>
+</body>
+</html>
