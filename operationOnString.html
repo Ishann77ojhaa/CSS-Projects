@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operation On String</title>
+</head>
+<body>
+    <script>
+
+        let school = 'Shreeyantra College'        //Creating String
+        let text = `Welcome to ${school}`        
+        document.write(text + "<br>")   
+
+        let str = "Hello"         //String Length
+        document.write(str.length + "<br>")         
+
+        let cha = "Javascript"
+        document.write(cha[0] + "<br>")         //Accessing Character
+        document.write(cha.charAt(4) + "<br>")
+
+
+        let ca = "Hello"                 //Changing case
+        document.write(ca.toUpperCase() + "<br>")
+        document.write(ca.toLowerCase() + "<br>")
+
+        let first = "Shreeyantra"    //Joining string
+        let second = "College"
+
+        // let result = first + " " + second;
+        let result = `${first}` + ` ` + `${second}`
+        document.write(result + "<br>")
+
+        let txt = "I Love Javascript"   //Searching String
+        document.write(txt.indexOf("Love") + "<br>")
+        document.write(txt.includes("html") + "<br>")
+
+        let ext = "Javascript"       //Extracting part of string
+        document.write(ext.slice(0,4) + "<br>");
+        document.write(ext.substring(4,10) + "<br>");
+
+       let rep = "Hello World"         //Replacing Text
+       document.write(rep.replace("World","Ishan" + "<br>"))
+    //    document.write(rep.replaceAll(("l", "*" ) + "<br>"))
+  
+       let tr = "    Hello    ";
+       document.write(tr.trim() + "<br>")
+    //    document.write(tr.trimStart())  //Removes left space
+    //    document.write(tr.trimEnd())    //Removes Right Space
+
+    </script>
+</body>
+</html>
